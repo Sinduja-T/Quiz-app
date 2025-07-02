@@ -1,0 +1,155 @@
+/* Reset and body setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+  color: #333;
+}
+
+/* Common screen styling */
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Front Page Welcome */
+.welcome {
+  background: linear-gradient(135deg, #c9ffbf, #ffafbd);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo */
+.logo {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+/* Start Controls */
+.start-controls {
+  margin-top: 20px;
+}
+
+#username {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+#language {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #6a11cb;
+  background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(315deg, #2575fc 0%, #6a11cb 74%);
+}
+
+/* Quiz box */
+#quiz-box {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  padding: 30px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Question styling */
+#question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.options button {
+  background-color: #f3f3f3;
+  color: #333;
+  border: 2px solid #6a11cb;
+  border-radius: 8px;
+}
+
+.quiz-footer {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Result styling */
+#result {
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+}
+
+#score-display {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#result-avatar-name {
+  margin-bottom: 20px;
+}
+
+/* WhatsApp share link */
+#whatsapp-share {
+  display: inline-block;
+  background-color: #25d366;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+#whatsapp-share:hover {
+  background-color: #1ebea5;
+}
+/* Avatar Container */
+#avatar-container {
+  font-size: 80px; /* Increase from 50px to 80px or higher if needed */
+  width: 120px; /* Larger width */
+  height: 120px; /* Larger height */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7d794; /* pastel yellow background or change */
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+  transition: transform 0.3s ease;
+}
+
+#avatar-container:hover {
+  transform: scale(1.05);
+}

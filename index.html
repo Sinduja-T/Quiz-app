@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎉 Front Page -->
+  <div id="start-screen" class="screen">
+    <div class="welcome">
+      <h1>Welcome to the Web Tech Quiz</h1>
+      <p>Fill in your details to get started!</p>
+
+      <!-- Username input -->
+      <div class="input-section">
+        <label for="username">Your Name:</label>
+        <input type="text" id="username" placeholder="Enter your name" oninput="autoGenerateAvatar()" />
+      </div>
+
+      <!-- Avatar Display -->
+      <div id="avatar-container" class="avatar-preview"></div>
+
+      <!-- Language Select -->
+      <div class="input-section">
+        <label for="language">Select Language:</label>
+        <select id="language">
+          <option value="en">English</option>
+          <option value="hi">Hindi</option>
+          <option value="es">Spanish</option>
+        </select>
+      </div>
+
+      <!-- Start Quiz -->
+      <div class="start-controls">
+        <button id="start-btn">Start Quiz</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🧠 Quiz Section -->
+  <div id="quiz-box" class="screen" style="display: none;">
+    <div class="question-box">
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <div class="quiz-footer">
+        <span id="progress"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 🏆 Result / Scoreboard -->
+  <div id="result" class="screen" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p id="score-display"></p>
+    <div id="result-avatar-name"></div>
+
+    <!-- WhatsApp Share -->
+    <a id="whatsapp-share" href="#" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px;"/>
+      Share on WhatsApp
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
